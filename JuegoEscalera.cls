@@ -1,10 +1,10 @@
 public class JuegoEscalera {
     
-    public Integer tirarDado() {
+    public static Integer tirarDado() {
         return (Integer)Math.ceil(Math.random() * 6);
     }
 
-    public Integer sube(Integer pos) {
+    public static Integer sube(Integer pos) {
         if (pos == 3) {
             System.debug('Jugador sube por escalera al cuadro 11');
             pos = 11;
@@ -21,7 +21,7 @@ public class JuegoEscalera {
         return pos;
     }
 
-    public Integer baja(Integer pos) {
+    public static Integer baja(Integer pos) {
         if (pos == 14) {
             System.debug('Jugador desciende al cuadro 4');
         } else if (pos == 19) {
@@ -37,7 +37,7 @@ public class JuegoEscalera {
         return pos;
     }
 
-    public void main() {
+    public static void main() {
         Integer pos = 1;
         System.debug('Bienvenido al juego de la escalera');
 
