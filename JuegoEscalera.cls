@@ -1,7 +1,9 @@
 public class JuegoEscalera {
     
     public static Integer tirarDado() {
-        return (Integer)Math.ceil(Math.random() * 6);
+        Double dado = Math.ceil(Math.random() * 6);
+        Integer value = dado.intValue();
+        return value;
     }
 
     public static Integer sube(Integer pos) {
