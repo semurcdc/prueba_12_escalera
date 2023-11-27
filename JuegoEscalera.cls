@@ -24,6 +24,7 @@ public class JuegoEscalera {
     public static Integer baja(Integer pos) {
         if (pos == 14) {
             System.debug('Jugador desciende al cuadro 4');
+            pos = 4;
         } else if (pos == 19) {
             System.debug('Jugador desciende al cuadro 8');
             pos = 8;
